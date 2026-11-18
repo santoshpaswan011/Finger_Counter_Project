@@ -23,21 +23,6 @@ Pass each frame to the MediaPipe Hand Landmarker to get 21 landmarks.
 Compare the tip landmark of each finger with the joint below it. A tip above its joint means the finger is up.
 Check the thumb separately using the x-axis, since it moves sideways.
 Add up the raised fingers and display the count on the frame.
-🚀 Installation & Usage
-bash
-# Clone the repository
-git clone https://github.com/<your-username>/finger-counter.git
-cd finger-counter
-
-# Install dependencies
-pip install opencv-python mediapipe numpy
-
-# Run the project
-python main.py
-
-Press q to quit the webcam window.
-
-Windows tip: If the camera does not open, use cv2.VideoCapture(0, cv2.CAP_DSHOW).
 
 📂 Project Structure
 finger-counter/
